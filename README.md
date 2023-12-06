@@ -44,499 +44,22 @@ Description: Ubuntu 22.04.3 LTS
 
 Release: 22.04
 
-Codename: jammy
 
 ```
 sudo apt update
 ```
 
-Hit:1 http\://packages.microsoft.com/repos/code stable InRelease
-
-Hit:2 https\://download.docker.com/linux/ubuntu jammy InRelease                 
-
-Hit:3 https\://dl.google.com/linux/chrome/deb stable InRelease                  
-
-Hit:4 http\://in.archive.ubuntu.com/ubuntu jammy InRelease                      
-
-Get:5 http\://in.archive.ubuntu.com/ubuntu jammy-updates InRelease \[119 kB]     
-
-Get:6 http\://security.ubuntu.com/ubuntu jammy-security InRelease \[110 kB]
-
-Hit:7 http\://in.archive.ubuntu.com/ubuntu jammy-backports InRelease 
-
-Fetched 229 kB in 2s (97.1 kB/s)
-
-Reading package lists... Done
-
-Building dependency tree... Done
-
-Reading state information... Done
-
-49 packages can be upgraded. Run 'apt list --upgradable' to see them.
-
-N: Skipping acquire of configured file 'stable/binary-i386/Packages' as repository 'https\://download.docker.com/linux/ubuntu jammy InRelease' doesn't support architecture 'i386'
-
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Translations (main/i18n/Translation-en\_IN) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11-icons-hidpi (main/dep11/icons-64x64\@2.tar) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Translations (main/i18n/Translation-en\_IN) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11-icons-small (main/dep11/icons-48x48.tar) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11-icons (main/dep11/icons-64x64.tar) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target DEP-11-icons-hidpi (main/dep11/icons-64x64\@2.tar) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
-W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
-
 ```
 sudo apt-get install podman
 ```
 
-Reading package lists... Done
-
-Building dependency tree... Done
-
-Reading state information... Done
-
-The following packages were automatically installed and are no longer required:
-
-  gyp libc-ares2 libjs-events libjs-highlight.js libjs-inherits libjs-is-typedarray libjs-psl libjs-source-map libjs-sprintf-js libjs-typedarray-to-buffer libnode-dev libnode72 libssl-dev libuv1-dev
-
-  node-abbrev node-ansi-regex node-ansi-styles node-ansistyles node-are-we-there-yet node-arrify node-asap node-asynckit node-balanced-match node-brace-expansion node-chownr node-clean-yaml-object
-
-  node-color-convert node-color-name node-commander node-core-util-is node-decompress-response node-delayed-stream node-delegates node-depd node-diff node-encoding node-end-of-stream node-err-code
-
-  node-escape-string-regexp node-fancy-log node-foreground-child node-fs.realpath node-function-bind node-get-stream node-glob node-growl node-has-flag node-has-unicode node-hosted-git-info node-iconv-lite
-
-  node-iferr node-imurmurhash node-indent-string node-inflight node-inherits node-ini node-ip node-ip-regex node-is-buffer node-is-plain-obj node-is-typedarray node-isarray node-isexe
-
-  node-json-parse-better-errors node-jsonparse node-kind-of node-lodash-packages node-lowercase-keys node-lru-cache node-mimic-response node-minimatch node-minimist node-minipass node-mute-stream
-
-  node-negotiator node-npm-bundled node-once node-osenv node-p-cancelable node-p-map node-path-is-absolute node-process-nextick-args node-promise-inflight node-promise-retry node-promzard node-pump
-
-  node-quick-lru node-read node-readable-stream node-resolve node-retry node-safe-buffer node-set-blocking node-signal-exit node-slash node-slice-ansi node-source-map node-spdx-correct node-spdx-exceptions
-
-  node-spdx-expression-parse node-spdx-license-ids node-sprintf-js node-stealthy-require node-string-decoder node-supports-color node-text-table node-time-stamp node-tmatch node-typedarray-to-buffer
-
-  node-universalify node-util-deprecate node-validate-npm-package-license node-webidl-conversions node-whatwg-fetch node-wrappy node-yallist nodejs-doc
-
-Use 'sudo apt autoremove' to remove them.
-
-The following additional packages will be installed:
-
-  buildah catatonit conmon containernetworking-plugins crun fuse-overlayfs golang-github-containernetworking-plugin-dnsname golang-github-containers-common golang-github-containers-image libostree-1-1 uidmap
-
-Suggested packages:
-
-  containers-storage docker-compose
-
-The following NEW packages will be installed:
-
-  buildah catatonit conmon containernetworking-plugins crun fuse-overlayfs golang-github-containernetworking-plugin-dnsname golang-github-containers-common golang-github-containers-image libostree-1-1 podman
-
-  uidmap
-
-0 upgraded, 12 newly installed, 0 to remove and 49 not upgraded.
-
-Need to get 25.3 MB of archives.
-
-After this operation, 109 MB of additional disk space will be used.
-
-Do you want to continue? \[Y/n] y
-
-Get:1 http\://in.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 uidmap amd64 1:4.8.1-2ubuntu2.1 \[22.4 kB]
-
-Get:2 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 golang-github-containers-image all 5.16.0-3 \[29.3 kB]
-
-Get:3 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 golang-github-containers-common all 0.44.4+ds1-1 \[28.1 kB]
-
-Get:4 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 libostree-1-1 amd64 2022.2-3 \[333 kB]
-
-Get:5 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 buildah amd64 1.23.1+ds1-2 \[6,094 kB]                                                                                                              
-
-Get:6 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 catatonit amd64 0.1.7-1 \[307 kB]                                                                                                                   
-
-Get:7 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 conmon amd64 2.0.25+ds1-1.1 \[35.1 kB]                                                                                                              
-
-Get:8 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 containernetworking-plugins amd64 0.9.1+ds1-1 \[6,422 kB]                                                                                           
-
-Get:9 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 crun amd64 0.17+dfsg-1.1 \[300 kB]                                                                                                                  
-
-Get:10 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 fuse-overlayfs amd64 1.7.1-1 \[44.7 kB]                                                                                                            
-
-Get:11 http\://in.archive.ubuntu.com/ubuntu jammy/universe amd64 golang-github-containernetworking-plugin-dnsname amd64 1.3.1+ds1-2 \[1,083 kB]                                                                     
-
-Get:12 http\://in.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 podman amd64 3.4.4+ds1-1ubuntu1.22.04.2 \[10.6 MB]                                                                                         
-
-Fetched 25.3 MB in 22s (1,134 kB/s)                                                                                                                                                                               
-
-Selecting previously unselected package uidmap.
-
-(Reading database ... 224016 files and directories currently installed.)
-
-Preparing to unpack .../00-uidmap\_1%3a4.8.1-2ubuntu2.1\_amd64.deb ...
-
-Unpacking uidmap (1:4.8.1-2ubuntu2.1) ...
-
-Selecting previously unselected package golang-github-containers-image.
-
-Preparing to unpack .../01-golang-github-containers-image\_5.16.0-3\_all.deb ...
-
-Unpacking golang-github-containers-image (5.16.0-3) ...
-
-Selecting previously unselected package golang-github-containers-common.
-
-Preparing to unpack .../02-golang-github-containers-common\_0.44.4+ds1-1\_all.deb ...
-
-Unpacking golang-github-containers-common (0.44.4+ds1-1) ...
-
-Selecting previously unselected package libostree-1-1:amd64.
-
-Preparing to unpack .../03-libostree-1-1\_2022.2-3\_amd64.deb ...
-
-Unpacking libostree-1-1:amd64 (2022.2-3) ...
-
-Selecting previously unselected package buildah.
-
-Preparing to unpack .../04-buildah\_1.23.1+ds1-2\_amd64.deb ...
-
-Unpacking buildah (1.23.1+ds1-2) ...
-
-Selecting previously unselected package catatonit.
-
-Preparing to unpack .../05-catatonit\_0.1.7-1\_amd64.deb ...
-
-Unpacking catatonit (0.1.7-1) ...
-
-Selecting previously unselected package conmon.
-
-Preparing to unpack .../06-conmon\_2.0.25+ds1-1.1\_amd64.deb ...
-
-Unpacking conmon (2.0.25+ds1-1.1) ...
-
-Selecting previously unselected package containernetworking-plugins.
-
-Preparing to unpack .../07-containernetworking-plugins\_0.9.1+ds1-1\_amd64.deb ...
-
-Unpacking containernetworking-plugins (0.9.1+ds1-1) ...
-
-Selecting previously unselected package crun.
-
-Preparing to unpack .../08-crun\_0.17+dfsg-1.1\_amd64.deb ...
-
-Unpacking crun (0.17+dfsg-1.1) ...
-
-Selecting previously unselected package fuse-overlayfs.
-
-Preparing to unpack .../09-fuse-overlayfs\_1.7.1-1\_amd64.deb ...
-
-Unpacking fuse-overlayfs (1.7.1-1) ...
-
-Selecting previously unselected package golang-github-containernetworking-plugin-dnsname.
-
-Preparing to unpack .../10-golang-github-containernetworking-plugin-dnsname\_1.3.1+ds1-2\_amd64.deb ...
-
-Unpacking golang-github-containernetworking-plugin-dnsname (1.3.1+ds1-2) ...
-
-Selecting previously unselected package podman.
-
-Preparing to unpack .../11-podman\_3.4.4+ds1-1ubuntu1.22.04.2\_amd64.deb ...
-
-Unpacking podman (3.4.4+ds1-1ubuntu1.22.04.2) ...
-
-Setting up crun (0.17+dfsg-1.1) ...
-
-Setting up uidmap (1:4.8.1-2ubuntu2.1) ...
-
-Setting up libostree-1-1:amd64 (2022.2-3) ...
-
-Setting up golang-github-containers-image (5.16.0-3) ...
-
-Setting up conmon (2.0.25+ds1-1.1) ...
-
-Setting up containernetworking-plugins (0.9.1+ds1-1) ...
-
-Setting up catatonit (0.1.7-1) ...
-
-Setting up golang-github-containernetworking-plugin-dnsname (1.3.1+ds1-2) ...
-
-Setting up fuse-overlayfs (1.7.1-1) ...
-
-Setting up golang-github-containers-common (0.44.4+ds1-1) ...
-
-Setting up buildah (1.23.1+ds1-2) ...
-
-Setting up podman (3.4.4+ds1-1ubuntu1.22.04.2) ...
-
-Created symlink /etc/systemd/user/default.target.wants/podman.service → /usr/lib/systemd/user/podman.service.
-
-Created symlink /etc/systemd/user/sockets.target.wants/podman.socket → /usr/lib/systemd/user/podman.socket.
-
-Created symlink /etc/systemd/system/default.target.wants/podman.service → /lib/systemd/system/podman.service.
-
-Created symlink /etc/systemd/system/sockets.target.wants/podman.socket → /lib/systemd/system/podman.socket.
-
-Created symlink /etc/systemd/system/default.target.wants/podman-auto-update.service → /lib/systemd/system/podman-auto-update.service.
-
-Created symlink /etc/systemd/system/timers.target.wants/podman-auto-update.timer → /lib/systemd/system/podman-auto-update.timer.
-
-Created symlink /etc/systemd/system/default.target.wants/podman-restart.service → /lib/systemd/system/podman-restart.service.
-
-Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
-
-Processing triggers for man-db (2.10.2-1) ...
-
-neeraj\@neeraj-G3-3500:\~$ 
-
+```
 podman info
+```
 
-host:
-
-  arch: amd64
-
-  buildahVersion: 1.23.1
-
-  cgroupControllers:
-
-  - memory
-
-  - pids
-
-  cgroupManager: systemd
-
-  cgroupVersion: v2
-
-  conmon:
-
-    package: 'conmon: /usr/bin/conmon'
-
-    path: /usr/bin/conmon
-
-    version: 'conmon version 2.0.25, commit: unknown'
-
-  cpus: 8
-
-  distribution:
-
-    codename: jammy
-
-    distribution: ubuntu
-
-    version: "22.04"
-
-  eventLogger: journald
-
-  hostname: neeraj-G3-3500
-
-  idMappings:
-
-    gidmap:
-
-    - container\_id: 0
-
-      host\_id: 1000
-
-      size: 1
-
-    - container\_id: 1
-
-      host\_id: 100000
-
-      size: 65536
-
-    uidmap:
-
-    - container\_id: 0
-
-      host\_id: 1000
-
-      size: 1
-
-    - container\_id: 1
-
-      host\_id: 100000
-
-      size: 65536
-
-  kernel: 6.2.0-37-generic
-
-  linkmode: dynamic
-
-  logDriver: journald
-
-  memFree: 694177792
-
-  memTotal: 8100720640
-
-  ociRuntime:
-
-    name: crun
-
-    package: 'crun: /usr/bin/crun'
-
-    path: /usr/bin/crun
-
-    version: |-
-
-      crun version 0.17
-
-      commit: 0e9229ae34caaebcb86f1fde18de3acaf18c6d9a
-
-      spec: 1.0.0
-
-      +SYSTEMD +SELINUX +APPARMOR +CAP +SECCOMP +EBPF +YAJL
-
-  os: linux
-
-  remoteSocket:
-
-    path: /run/user/1000/podman/podman.sock
-
-  security:
-
-    apparmorEnabled: false
-
-    capabilities: CAP\_CHOWN,CAP\_DAC\_OVERRIDE,CAP\_FOWNER,CAP\_FSETID,CAP\_KILL,CAP\_NET\_BIND\_SERVICE,CAP\_SETFCAP,CAP\_SETGID,CAP\_SETPCAP,CAP\_SETUID,CAP\_SYS\_CHROOT
-
-    rootless: true
-
-    seccompEnabled: true
-
-    seccompProfilePath: /usr/share/containers/seccomp.json
-
-    selinuxEnabled: false
-
-  serviceIsRemote: false
-
-  slirp4netns:
-
-    executable: /usr/bin/slirp4netns
-
-    package: 'slirp4netns: /usr/bin/slirp4netns'
-
-    version: |-
-
-      slirp4netns version 1.0.1
-
-      commit: 6a7b16babc95b6a3056b33fb45b74a6f62262dd4
-
-      libslirp: 4.6.1
-
-  swapFree: 2146430976
-
-  swapTotal: 2147479552
-
-  uptime: 10h 52m 59.29s (Approximately 0.42 days)
-
-plugins:
-
-  log:
-
-  - k8s-file
-
-  - none
-
-  - journald
-
-  network:
-
-  - bridge
-
-  - macvlan
-
-  volume:
-
-  - local
-
-registries: {}
-
-store:
-
-  configFile: /home/neeraj/.config/containers/storage.conf
-
-  containerStore:
-
-    number: 0
-
-    paused: 0
-
-    running: 0
-
-    stopped: 0
-
-  graphDriverName: overlay
-
-  graphOptions: {}
-
-  graphRoot: /home/neeraj/.local/share/containers/storage
-
-  graphStatus:
-
-    Backing Filesystem: extfs
-
-    Native Overlay Diff: "true"
-
-    Supports d\_type: "true"
-
-    Using metacopy: "false"
-
-  imageStore:
-
-    number: 0
-
-  runRoot: /run/user/1000/containers
-
-  volumePath: /home/neeraj/.local/share/containers/storage/volumes
-
-version:
-
-  APIVersion: 3.4.4
-
-  Built: 0
-
-  BuiltTime: Thu Jan  1 05:30:00 1970
-
-  GitCommit: ""
-
-  GoVersion: go1.18.1
-
-  OsArch: linux/amd64
-
-  Version: 3.4.4
-
+```
 podman version
+```
 
 Version:      3.4.4
 
@@ -550,8 +73,9 @@ OS/Arch:      linux/amd64
 
 
 # To Search for a image in registry<a id="to-search-for-a-image-in-registry"></a>
-
+```
 Podman search nginx
+```
 
 NAME                                                                   DESCRIPTION
 
@@ -695,10 +219,26 @@ Writing manifest to image destination
 
 a6bd71f48f6839d9faae1f29d3babef831e76bc213107682c5cc80f0cbb30866
 
+```
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL "https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/Release.key" \
+  | gpg --dearmor \
+  | sudo tee /etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg > /dev/null
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg]\
+    https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/ /" \
+  | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:unstable.list > /dev/null
+sudo apt-get update -qq
+sudo apt-get -qq -y install podman
+```
+
 
 # To run an image<a id="to-run-an-image"></a>
 
+```
 podman run docker.io/library/ngnix
+```
+
 
 /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
 
@@ -867,79 +407,3 @@ Podman ps -a
 
 podman rm \<container\_name>
 
-
-# How to Create our own image?<a id="how-to-create-our-own-image"></a>
-
-Create a python file named app.py and add following line 
-
-print(“Hello Neeraj!”)
-
-Run our python program using
-
-Python3 app.py
-
-Create a new directory
-
-mkdir myimage
-
-cd myimage
-
-neeraj\@neeraj-G3-3500:\~$ pwd
-
-/home/neeraj
-
-neeraj\@neeraj-G3-3500:\~$ mkdir myimage
-
-neeraj\@neeraj-G3-3500:\~$ cd myimage/
-
-neeraj\@neeraj-G3-3500:\~/myimage$ touch app.py
-
-neeraj\@neeraj-G3-3500:\~/myimage$ ls
-
-app.py
-
-neeraj\@neeraj-G3-3500:\~/myimage$ vi app.py
-
-neeraj\@neeraj-G3-3500:\~/myimage$ cat app.py
-
-print ("Hey Neeraj!")
-
-neeraj\@neeraj-G3-3500:\~/myimage$ python3 -V
-
-Python 3.10.12
-
-neeraj\@neeraj-G3-3500:\~/myimage$ python3 app.py
-
-Hey Neeraj!
-
-Create a Podmanfile
-
-neeraj\@neeraj-G3-3500:\~/myimage$ python3 -V
-
-Python 3.10.12
-
-neeraj\@neeraj-G3-3500:\~/myimage$ python3 app.py
-
-Hey Neeraj!
-
-neeraj\@neeraj-G3-3500:\~/myimage$ touch Podmanfile
-
-neeraj\@neeraj-G3-3500:\~/myimage$ ls
-
-app.py  Podmanfile
-
-neeraj\@neeraj-G3-3500:\~/myimage$ vi Podmanfile
-
-neeraj\@neeraj-G3-3500:\~/myimage$ cat Podmanfile
-
-FROM python:3.10.2
-
-WORKDIR /app
-
-COPY . .
-
-CMD \["python", "app.py"]
-
-To build an image
-
-podman build -t myimage:1.1 .

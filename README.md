@@ -291,14 +291,18 @@ podman run docker.io/library/ngnix
 
 # To run an image in a background <a id="to-run-an-image-in-a-background"></a>
 
+```
 podman run -d docker.io/library/ngnix
+```
 
 c837732dfcae57a664533ff99e9c7d51a9040035e4f74041b6095d7a85628182
 
 
 # To see the running containers<a id="to-see-the-running-containers"></a>
 
+```
 Podman ps
+```
 
 CONTAINER ID  IMAGE                           COMMAND               CREATED         STATUS         PORTS       NAMES
 
@@ -369,7 +373,9 @@ wlp0s20f3: flags=4163\<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 # Port Binding of container<a id="port-binding-of-container"></a>
 
+```
 podman run -dt -p 8080:80/tcp docker.io/library/nginx
+```
 
 Fd4ec00e7222ac3b2d9f9b94da9135f5ff503001e3a50f433629d439655f5d39
 
@@ -386,24 +392,31 @@ fd4ec00e7222  docker.io/library/nginx:latest  nginx -g daemon o...  23 second
 
 # To Stop a container<a id="to-stop-a-container"></a>
 
+```
 podman stop \<container\_name / container id>
+```
 
+```
 neeraj\@neeraj-G3-3500:\~$ podman stop c837732dfcae
+```
 
 c837732dfcae
 
 
 # To run multiple containers with different port<a id="to-run-multiple-containers-with-different-port"></a>
 
+```
 podman run -dt -p 8081:80/tcp docker.io/library/nginx
 
 podman run -dt -p 8082:80/tcp docker.io/library/nginx
+```
 
 
 # To see all the existing containers<a id="to-see-all-the-existing-containers"></a>
 
+```
 Podman ps -a
-
+```
 
 # To remove the existing containers<a id="to-remove-the-existing-containers"></a>
 

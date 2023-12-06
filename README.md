@@ -231,7 +231,9 @@ echo \
 sudo apt-get update -qq
 sudo apt-get -qq -y install podman
 ```
-
+```
+sudo apt install curl
+```
 
 # To run an image<a id="to-run-an-image"></a>
 

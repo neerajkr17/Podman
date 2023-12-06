@@ -32,8 +32,9 @@ A container is a lightweight, portable, and self-sufficient unit that can run ap
 # Step for Installation:-<a id="step-for-installation-"></a>
 
 ## Prerequisite<a id="prerequisite"></a>
-
+```
 lsb\_release -a
+```
 
 No LSB modules are available.
 
@@ -45,7 +46,9 @@ Release: 22.04
 
 Codename: jammy
 
+```
 sudo apt update
+```
 
 Hit:1 http\://packages.microsoft.com/repos/code stable InRelease
 
@@ -117,9 +120,9 @@ W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt
 
 W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/google-chrome.list:3 and /etc/apt/sources.list.d/google-chrome.list:4
 
-neeraj\@neeraj-G3-3500:\~$ 
-
+```
 sudo apt-get install podman
+```
 
 Reading package lists... Done
 

@@ -396,7 +396,7 @@ Podman ps -a
 ## To remove the existing containers<a id="to-remove-the-existing-containers"></a>
 
 ```
-podman rm \<container\_name>
+podman rm f \<container\_name>
 ```
 
 ## To remove image<a id="to-remove-image"></a>

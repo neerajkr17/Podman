@@ -1,6 +1,28 @@
 ![](https://lh7-us.googleusercontent.com/WddWh5XDjHfSIO_pwEtwGKTX10GPOLdHiDJ05E99G9Gp6cgJKUQuj4i4qDAGB7b2j9X07-jkTi2dyaJRP46xajbb-D7u9g1Bgoy3XIPepPpp6gqs4UF502cn5l9PztYxUb8WLSHN5hfyR389pShu9tI)
 
-
+# Table of Contents
+   - [What is Podman?](#what-is-podman)
+   - [Why Podman? (Features of Podman)](#why-podman-features-of-podman)
+   - [What are Pods?](#what-are-pods)
+   - [Containers](#containers)
+   - [Steps for Installation](#step-for-installation-)
+   - [Prerequisite](#prerequisite)
+   - [Installation Commands](#installation-commands)
+   - [Checking Podman Version](#checking-podman-version)
+   - [Additional Installations](#additional-installations)
+   - [Searching for Images](#to-search-for-a-image-in-registry)
+   - [Downloading an Image](#to-download-an-image)
+   - [Checking Downloaded Images](#checking-already-downloaded-images)
+   - [Running an Image in the Background](#to-run-an-image-in-a-background)
+   - [Viewing Running Containers](#to-see-the-running-containers)
+   - [Port Binding of Container](#port-binding-of-container)
+   - [Stopping a Container](#to-stop-a-container)
+   - [Running Multiple Containers with Different Ports](#to-run-multiple-containers-with-different-port)
+   - [Viewing All Existing Containers](#to-see-all-the-existing-containers)
+   - [Removing Existing Containers](#to-remove-the-existing-containers)
+   - [Removing an Image](#to-remove-image)
+  
+     
 # What is Podman?<a id="what-is-podman"></a>
 
 - Podman provides a secure and lightweight alternative to docker for creating and managing containers on Linux systems.

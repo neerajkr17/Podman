@@ -68,6 +68,9 @@ Release: 22.04
 
 Codename: jammy
 
+
+
+
 ```
 sudo apt update
 ```
@@ -79,221 +82,116 @@ sudo apt-get install podman
 ```
 podman info
 ```
-
-
+Output:-
+```
 host:
-
   arch: amd64
-
   buildahVersion: 1.23.1
-
   cgroupControllers:
-
   - memory
-
   - pids
-
   cgroupManager: systemd
-
   cgroupVersion: v2
-
   conmon:
-
     package: 'conmon: /usr/bin/conmon'
-
     path: /usr/bin/conmon
-
     version: 'conmon version 2.0.25, commit: unknown'
-
   cpus: 8
-
   distribution:
-
     codename: jammy
-
     distribution: ubuntu
-
     version: "22.04"
-
   eventLogger: journald
-
   hostname: neeraj-G3-3500
-
   idMappings:
-
     gidmap:
-
     - container\_id: 0
-
       host\_id: 1000
-
       size: 1
-
     - container\_id: 1
-
       host\_id: 100000
-
       size: 65536
-
     uidmap:
-
     - container\_id: 0
-
       host\_id: 1000
-
       size: 1
-
     - container\_id: 1
-
       host\_id: 100000
-
       size: 65536
-
   kernel: 6.2.0-37-generic
-
   linkmode: dynamic
-
   logDriver: journald
-
   memFree: 694177792
-
   memTotal: 8100720640
-
   ociRuntime:
-
     name: crun
-
     package: 'crun: /usr/bin/crun'
-
     path: /usr/bin/crun
-
     version: |-
-
       crun version 0.17
-
       commit: 0e9229ae34caaebcb86f1fde18de3acaf18c6d9a
-
       spec: 1.0.0
-
       +SYSTEMD +SELINUX +APPARMOR +CAP +SECCOMP +EBPF +YAJL
-
   os: linux
-
   remoteSocket:
-
     path: /run/user/1000/podman/podman.sock
-
   security:
-
     apparmorEnabled: false
-
     capabilities: CAP\_CHOWN,CAP\_DAC\_OVERRIDE,CAP\_FOWNER,CAP\_FSETID,CAP\_KILL,CAP\_NET\_BIND\_SERVICE,CAP\_SETFCAP,CAP\_SETGID,CAP\_SETPCAP,CAP\_SETUID,CAP\_SYS\_CHROOT
-
     rootless: true
-
     seccompEnabled: true
-
     seccompProfilePath: /usr/share/containers/seccomp.json
-
     selinuxEnabled: false
-
   serviceIsRemote: false
-
   slirp4netns:
-
     executable: /usr/bin/slirp4netns
-
     package: 'slirp4netns: /usr/bin/slirp4netns'
-
     version: |-
-
       slirp4netns version 1.0.1
-
       commit: 6a7b16babc95b6a3056b33fb45b74a6f62262dd4
-
       libslirp: 4.6.1
-
   swapFree: 2146430976
-
   swapTotal: 2147479552
-
   uptime: 10h 52m 59.29s (Approximately 0.42 days)
-
 plugins:
-
   log:
-
   - k8s-file
-
   - none
-
   - journald
-
   network:
-
   - bridge
-
   - macvlan
-
   volume:
-
   - local
-
 registries: {}
-
 store:
-
   configFile: /home/neeraj/.config/containers/storage.conf
-
   containerStore:
-
     number: 0
-
     paused: 0
-
     running: 0
-
     stopped: 0
-
   graphDriverName: overlay
-
   graphOptions: {}
-
   graphRoot: /home/neeraj/.local/share/containers/storage
-
   graphStatus:
-
     Backing Filesystem: extfs
-
     Native Overlay Diff: "true"
-
     Supports d\_type: "true"
-
     Using metacopy: "false"
-
   imageStore:
-
     number: 0
-
   runRoot: /run/user/1000/containers
-
   volumePath: /home/neeraj/.local/share/containers/storage/volumes
-
 version:
-
   APIVersion: 3.4.4
-
   Built: 0
-
   BuiltTime: Thu Jan  1 05:30:00 1970
-
   GitCommit: ""
-
   GoVersion: go1.18.1
-
   OsArch: linux/amd64
-
   Version: 3.4.4
+```
 
 ```
 podman version
